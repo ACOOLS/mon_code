@@ -7,13 +7,22 @@ from PIL import Image
 
 
 def detect_img(yolo, image_path, output_path=''):
-    try:
-        image = Image.open(image_path)
-    except:
-        print ('Open Error! Try again!')
-    r_image = yolo.detect_image(image)
-    r_image.save(output_path)
+    dossier="results_test"
+    if os.path.exists(dossier) == False:
+        os.makedirs(dossier)
+    j=0
+    for i in os.listdir(image_path):
+        current_image=os.path.join(image_path,i)
+        nom=dossier+"/output_"+str(j)+".jpg"
+        try:
+            image = Image.open(current_image)
+        except:
+            print ('Open Error! Try again!')
+        r_image = yolo.detect_image(image)
+        r_image.save(nom)
+        j=j+1
     yolo.close_session()
+
 
 
 FLAGS = None
