@@ -299,7 +299,7 @@ if __name__ == '__main__':
         # Keep track of image bounding box
 
         (height, width) = k.shape[:2]
-        csv_lines.append('{} {},{},{},{},0\n'.format(output_path, x,
+        csv_lines.append('{} {},{},{},{},1\n'.format(output_path, x,
                          y, x + width, y + height))
 
         # plt.imshow (final)
@@ -309,7 +309,7 @@ if __name__ == '__main__':
         if num_images % 100 == 0:
             print (num_images, ' left')
 
-    with open(os.path.join(‘.’, 'annotations.csv'), ‘a’) as f:
+    with open(os.path.join('.', 'annotations.csv'), 'a') as f:
         for l in csv_lines:
             f.write(l)
 
