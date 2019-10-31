@@ -309,6 +309,6 @@ if __name__ == '__main__':
         if num_images % 100 == 0:
             print (num_images, ' left')
 
-    with open(os.path.join(PATH_OUTPUT, 'annotations.csv'), 'w') as f:
+    with open(os.path.join('.', 'annotations.csv'), 'a') as f:
         for l in csv_lines:
             f.write(l)
