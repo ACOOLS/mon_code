@@ -1,14 +1,14 @@
 # keras-yolo3
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+
 
 ## Introduction
 
-A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3).
+A Keras implementation of YOLOv3 (Tensorflow backend) inspired by [qqwweee/keras-yolo3](https://github.com/qqwweee/keras-yolo3), [belarbi2733/keras_yolov3] (https://github.com/belarbi2733/keras_yolov3) et [AlexeyAB/darknet] (https://github.com/AlexeyAB/darknet?files=1&fbclid=IwAR0SXGIApiAwQi56RpME1urZQyO0EAGGWHfPLCmyhA-Uoa3xlAjGIbIPBF0)
 This Work was applied on Keys datasets
 
 <p align="center">
-  <img src="yolo1.jpg" width="350" title="hover text">
+  <img src="test.jpg" width="350" title="hover text">
 </p>
 
 
